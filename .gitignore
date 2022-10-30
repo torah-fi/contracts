@@ -1,0 +1,49 @@
+# Hardhat
+src/hardhat/artifacts/*
+src/hardhat/artifacts/*/*
+src/hardhat/artifacts/*/*/*
+src/hardhat/artifacts/*/*/*/*
+src/hardhat/cache/*
+src/hardhat/cache/*/*
+src/hardhat/cache/*/*/*
+src/hardhat/cache/*/*/*/*
+
+package-lock.json
+
+node_modules/*
+build/*
+
+.DS_STORE
+*/.DS_STORE
+*/*/.DS_STORE
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env
+..env.swp
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.idea
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pem files
+*.pem
+/artifacts/
+/cache/
+/typechain-types/
