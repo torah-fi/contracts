@@ -70,10 +70,6 @@ contract Stock is ERC20Burnable, AbstractPausable {
         return true;
     }
 
-    function burn(uint256 _amount) external {
-        _burn(msg.sender, _amount);
-    }
-
     function poolMint(address to, uint256 amount) external onlyPools {
         if (amount.add(totalSupply()) > MAX_SUPPLY) {
             return;
