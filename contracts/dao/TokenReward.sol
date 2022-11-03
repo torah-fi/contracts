@@ -49,7 +49,7 @@ abstract contract TokenReward is CheckPermission {
     modifier reduceBlockReward() {
         if (block.number > startBlock && block.number >= periodEndBlock) {
             if (tokenPerBlock > minTokenReward) {
-                tokenPerBlock = tokenPerBlock.mul(90).div(100);
+                tokenPerBlock = tokenPerBlock.mul(80).div(100);
             }
             if (tokenPerBlock < minTokenReward) {
                 tokenPerBlock = minTokenReward;
